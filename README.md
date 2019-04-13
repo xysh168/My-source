@@ -1,6 +1,6 @@
 # My-project
 ```
-my project and some material resource
+my project and some material resource。
 ```
 
 
