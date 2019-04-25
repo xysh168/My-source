@@ -1,60 +1,32 @@
-固定列需要使用fixed属性，它接受 Boolean 值或者leftright，表示左边固定还是右边固定。
+通过给 type=index 的列传入 index 属性，可以自定义索引。该属性传入数字时，将作为索引的起始值。也可以传入一个方法，它提供当前行的行号（从 0 开始）作为参数，返回值将作为索引展示。
+
 <template>
   <el-table
     :data="tableData"
-    border
     style="width: 100%">
     <el-table-column
-      fixed
+      type="index"
+      :index="indexMethod">
+    </el-table-column>
+    <el-table-column
       prop="date"
       label="日期"
-      width="150">
+      width="180">
     </el-table-column>
     <el-table-column
       prop="name"
       label="姓名"
-      width="120">
-    </el-table-column>
-    <el-table-column
-      prop="province"
-      label="省份"
-      width="120">
-    </el-table-column>
-    <el-table-column
-      prop="city"
-      label="市区"
-      width="120">
+      width="180">
     </el-table-column>
     <el-table-column
       prop="address"
-      label="地址"
-      width="300">
-    </el-table-column>
-    <el-table-column
-      prop="zip"
-      label="邮编"
-      width="120">
-    </el-table-column>
-    <el-table-column
-      fixed="right"
-      label="操作"
-      width="100">
-      <template slot-scope="scope">
-        <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
-        <el-button type="text" size="small">编辑</el-button>
-      </template>
+      label="地址">
     </el-table-column>
   </el-table>
 </template>
 
 <script>
   export default {
-    methods: {
-      handleClick(row) {
-        console.log(row);
-      }
-    },
-
     data() {
       return {
         tableData: [{
@@ -63,30 +35,39 @@
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: 200333,
+          tag: '家'
         }, {
           date: '2016-05-04',
           name: '王小虎',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1517 弄',
-          zip: 200333
+          zip: 200333,
+          tag: '公司'
         }, {
           date: '2016-05-01',
           name: '王小虎',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1519 弄',
-          zip: 200333
+          zip: 200333,
+          tag: '家'
         }, {
           date: '2016-05-03',
           name: '王小虎',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1516 弄',
-          zip: 200333
-        }]
+          zip: 200333,
+          tag: '公司'
+        }],
+      }
+    },
+    methods: {
+      indexMethod(index) {
+        return index * 2;
       }
     }
-  }
+  };
 </script>

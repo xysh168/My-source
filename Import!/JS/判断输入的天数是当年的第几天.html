@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>demo</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var y =parseInt(prompt("请输入年份")),
+          m = parseInt(prompt("请输入月份")),
+          d =parseInt(prompt("请输入几号"));
+          if (y > 999 && y < 10000) {
+            if (m > 0 && m < 13) {
+                if (d > 0 && d < 30) {
+                    let c = 0;
+                    switch (m - 1) {
+                        case 11: c += 30;
+                        case 10: c += 31;
+                        case 9: c += 30;
+                        case 8: c += 31;
+                        case 7: c += 30;
+                        case 6: c += 31;
+                        case 5: c += 30;
+                        case 4: c += 31;
+                        case 3: c += 30;
+                        case 2: {
+                            if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
+                                c += 29;
+                            } else {
+                                c += 28;
+                            }
+                        }
+                        case 1: c += 31;
+                    }
+                    alert("在" + y + "里，你输入的是当前第" + (c + d) + "天");
+
+                } else {
+                    alert("您输入的天数错误，请重新输入");
+                }
+            } else {
+              alert("月份错误");
+            }
+          } else {
+              alert("年份输入错误");
+          }
+    </script>
+  </body>
+</html>
