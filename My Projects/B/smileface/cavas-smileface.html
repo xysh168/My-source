@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可爱滴笑脸</title>
+    <style>
+        canvas{background: url(./smileface.jpg) no-repeat;background-size:cover}
+    </style>
+</head>
+<body>
+      <canvas id="c3" width="1500" height="800">
+          您的浏览器版本太低，请升级!
+      </canvas>
+      <script>
+          var c3 = document.getElementById("c3");
+          var ctx = c3.getContext("2d");
+
+          function closeMouth(){
+              //绘制外围轮廓
+              ctx.beginPath();
+              ctx.arc(250,400,100,0,2*Math.PI);
+              ctx.lineTo(250,400);
+              ctx.strokeStyle = '#fff'
+              ctx.stroke();
+              //绘制填充眼球
+              ctx.beginPath();
+              ctx.arc(250,350,25,0,2*Math.PI);
+              ctx.fillStyle = "#38f";
+              ctx.fill();
+              //绘制填充眼神
+              ctx.beginPath();
+              ctx.arc(263,345,3,0,2*Math.PI);
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+          }
+          function openMouth(){
+              //绘外轮廓
+              ctx.beginPath();
+              ctx.arc(250,400,100,
+                  45*Math.PI/180,315*Math.PI/180);
+              ctx.lineTo(250,400);
+              ctx.closePath();
+              ctx.strokeStyle = '#fff'
+              ctx.stroke();
+              //填充眼球
+              ctx.beginPath();
+              ctx.arc(250,350,25,0,2*Math.PI);
+              ctx.fillStyle = "#38f";
+              ctx.fill();
+              //填充眼神
+              ctx.beginPath();
+              ctx.arc(263,345,3,0,2*Math.PI);
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+          }
+          var index = 0;
+          var timer = setInterval(function(){
+              ctx.clearRect(0,0,1000,800);
+              index++;
+              
+              if(index%2==0){
+                closeMouth();
+              }else{
+                openMouth();
+              }
+          },1000);
+      </script>
+</body>
+</html>

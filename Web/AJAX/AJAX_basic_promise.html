@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AJAX Basic on Promise</title>
+</head>
+<body>
+  <script>
+    function Ajax({type, url, data, dataType}) {
+      return new Promise((resolve) => {
+      /*创建异步对象*/
+        var xhr = new XMLHttpRequest()  /*这里赞不考虑浏览器问题*/
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var result = xhr.responseText;
+            /*对字符串的处理*/
+            if(dataType !== 'undefind' && dataType.toUppercase() === 'JSON') {
+              result = JSON.parse(result)
+            }
+            resolve({result})
+          }
+        }
+
+        /*对data的处理*/
+        if(typeof data === 'Object') {
+          var arr = []
+          for(var key in data) {
+            arr.push(key+"="+data[key])
+          }
+          data = arr.join('&')
+        }
+        if(type === 'get' && data!== 'undefind') {
+          url+= '?' + data
+        }
+      /*连接服务器*/
+        xhr.open(type, url, true)
+        /*为post请求增加请求头*/
+        if(type === 'post') {
+          xhr.setRequestHeader(
+            'Content-Type', 'application/x-www-form-urlencoded'
+          )
+        }
+      /*发送请求*/
+        if(type === 'get') {
+          xhr.send(null)
+        } else {
+          xhr.send(data)
+        }
+      })
+    }
+  </script>
+</body>
+</html>
