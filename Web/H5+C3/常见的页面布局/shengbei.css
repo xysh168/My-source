@@ -1,0 +1,53 @@
+body {
+  min-width: 550px;
+}
+#header{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background: paleturquoise
+}
+#footer{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: paleturquoise
+}
+
+#container {
+  padding-left: 200px; 
+  padding-right: 150px;
+}
+
+#container .column {
+  float: right;
+}
+#center, #footer, #header, #left, #right{text-align: center}
+#center {
+  width: 100%;
+  height: 450px;
+  line-height: 450px;
+  background: palegreen
+}
+
+#left {
+  width: 200px; 
+  height: 450px;
+  line-height: 450px;
+  background: blue;
+  margin-left: -200px;
+}
+
+#right {
+  width: 150px; 
+  height: 450px;
+  line-height: 450px;
+  background: red;
+  margin-right: -100%;
+  position: relative;
+  left: 150px;
+}
+
+#footer {
+  clear: both;
+}
