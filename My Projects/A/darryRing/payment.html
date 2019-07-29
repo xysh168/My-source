@@ -1,0 +1,397 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header-cart.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/order.css">
+		<style>
+			form {
+				display: block;
+				margin-top: 0em;
+			}
+			#container {
+				width: 1000px;
+				margin: 10px auto;
+			}
+#container .pay_info {
+    color: #808080;
+    padding: 0 2px;
+    font-size: 12px;
+}
+#container .pay_info b>i {
+    font-weight: bold;
+    font-style: normal;
+	color: #ff5d5b;
+    margin: 0 1px;
+    font-size: 18px;
+}
+
+#container .pay_info span {
+    float: right;
+    padding-right: 2px;
+}
+#pay_type .pay_type_title {
+    /*background: -moz-linear-gradient(top, #f5f4f5 0%, #e6e6e5 100%);*/
+    background: -webkit-linear-gradient(top, #f5f4f5 0%,#e6e6e5 100%);
+    /*background: -o-linear-gradient(top, #f5f4f5 0%,#e6e6e5 100%);*/
+    /*background: -ms-linear-gradient(top, #f5f4f5 0%,#e6e6e5 100%);*/
+    box-shadow: 3px 3px 3px #ccc;
+    color: #808080;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 18px;
+}
+#dnBank ul {
+    background: #fff;
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 35px 16px 25px 18px;
+    float: left;
+    box-shadow: 3px 3px 6px #ccc;
+	height:200px;
+}
+#dnBank ul li {
+    float: left;
+    margin: 0 13px 10px;
+}
+input {
+    border: none;
+}
+
+input[type="radio"] {
+    margin: 3px 3px 0px 5px;
+    box-sizing: border-box;
+}
+label {
+    cursor: default;
+}
+img {
+    border: 0px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#order .cart-pay{
+    position: initial;
+    width: 998px;
+    height: 50px;
+    background: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#order .cart-pay .pay-lf{
+    padding-left: 20px;
+}
+
+#order .cart-pay .pay-lf input{
+    margin: 0 4px 0 0!important;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+#order .cart-pay .pay-lf a{
+    color: #666;
+}
+#order .cart-pay p{
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 50px;
+}
+.cart-pay .pay_leftTime {
+    padding: 0 16px;
+    color: #636363;
+}
+
+.cart-pay>span {
+    font-size: 12px;
+    text-align: left;
+}
+.cart-pay .pay_leftTime>b {
+    color: #ff5d5b;
+}
+ #payment-post {
+    display: inline-block;
+    width: 160px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    background: #C67C59;
+    color: #fff;
+    text-align: center;
+    margin-left: 30px;
+	cursor: pointer;
+}
+
+#alertMsg {
+    display: none;
+    width: 380px;
+    border: 1px solid #ddd;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: 21px;
+    font-size: 12px;
+    position: absolute;
+    /* text-align: center; */
+    background: #fff;
+    z-index: 100000;
+    display: block;
+    position: fixed;
+    left: 480px;
+    top: 181px;
+    width: 340px;
+    height: 151px;
+}
+#alertMsg_info {
+    width: 265px;
+    height: 116px;
+    line-height: 1.6em;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 52px;
+    background: url(../img/ringlist/tan.png) no-repeat 12% 37%;
+    background-size: 9% auto;
+}
+#alertMsg span{
+    font-size: 23px;
+    font-family: 'sisun';
+    font-weight: 300;
+    color: #bdbdbd;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    cursor: pointer;
+}
+#alertMsg_btn1, #alertMsg_btn2 {
+    display: inline-block;
+    position: relative;
+    top: -63px;
+    left: 147px;
+    padding-left: 0px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #FE6A00;
+}
+#alertMsg_btn1 cite, #alertMsg_btn2 cite {
+    line-height: 21px;
+    display: inline-block;
+    padding: 5px 14px 4px 10px;
+    font-style: normal;
+    font-size: 16px;
+    position: relative;
+    left: 4px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="main" id="order">
+			<!--1、页面头部-->
+			<header id="header"></header>
+			<!--2、主体部分_轮播图、登录、小圈-->
+			<section class="w1000">
+				<!--1、购物车头-->
+				<div class="cart-top clear">
+					<h3>填写订单信息</h3>
+					<div class="shopping_steps rt">
+						<!--steps_active为当前步骤，steps_selected为已操作步骤-->
+						<div class="step1 steps_selected">
+							<span style="background-color: #caecb6">1</span>
+							<p style="color: #caecb6">1.我的购物车</p>
+						</div>
+						<div class="step2 ">
+							<span  style="background-color: #caecb6">2</span>
+							<p style="color: #caecb6">2. 填写订单信息 / 签署真爱协议</p>
+						</div>
+						<div class="step3 steps_active">
+							<span>3</span>
+							<p>3.付款 完成购买</p>
+						</div>
+					</div>
+				</div>
+				<!--2、支付-->
+				<form action="pay_success.html" method="post" id="pay_form">
+					<div id="container" class="clearfix" >
+						<!-- 支付订单信息-->
+						<div class="pay_info">
+							<b>支付金额：<i>4800元</i></b><input type="hidden" name="payment" value="0.01"/>
+							<span>支付订单：324235435 收款方：darryring</span><input type="hidden" name="orderId" />
+						</div>
+						<!--支付方式-->
+						<div id="pay_type">
+							<!-- 支付方式头-->
+							<div class="pay_type_title">
+								<b>网上银行支付</b>
+							</div>
+							<div id="dnBank" class="clear">
+								<ul>
+									<li><input type="radio" name="bankId" value="BOC-NET-B2C" id="02zg">
+										<label for="02zg"><img src="img/pay/pay_img1.jpg" alt="" /></label>
+									</li>
+									<li><input type="radio" name="bankId" value="ICBC-NET-B2C" id="03gs">
+										<label for="03gs"><img src="img/pay/pay_img2.jpg" alt="" /></label>
+									</li>
+									<li><input type="radio" name="bankId" value="CMBCHINA-NET-B2C" id="04zs">
+										<label for="04zs"><img src="img/pay/pay_img3.jpg" alt="" /></label>
+									</li>
+									<li><input type="radio" name="bankId" value="CCB-NET-B2C" id="05js">
+										<label for="05js"><img src="img/pay/pay_img4.jpg" alt=""/></label>
+									</li>
+									<li><input type="radio" name="bankId" value="ABC-NET-B2C" id="06ny">
+										<label for="06ny"><span><img src="img/pay/pay_img5.jpg" alt=""/></span></label>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+						<!--结算条-->
+						<div class="cart-pay">
+								<span class="pay_leftTime">
+									剩余付款时间：<b>15：00</b>
+									<!--获取待支付时间并更改订单状态-->
+								</span>
+								<a id="payment-post" class="rt">立即结算</a>
+							</div>
+						</div>
+
+					</div>
+				</form>
+			</section>
+			<!--3、页面最底部-->
+			<footer id="footer"></footer>
+			<!--4.弹框 -->
+			<div id="mask">
+				<div id="alertMsg" style="display: none; position: fixed; left: 520px; top: 239.5px;z-index:150">
+					<span class="rt" id="closeMsg">X</span>
+					<p id="alertMsg_info">您尚未登录！</p>
+					<a id="alertMsg_btn1" href="javascript:void(0)"><cite>确定</cite></a>
+				</div>
+				<!--4.模态框 -->
+				<div id="shadowDiv" style="top: 0px; left: 0px; position: absolute; z-index: 100; background: rgba(0, 0, 0, 0.6); width: 100%; height: 1027px;display: none;"></div>
+			</div>
+
+
+		</div>
+	<script src="js/ajax.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/header-cart.js"></script>
+	<script src="js/order.js"></script>
+	<script src="js/footer.js"></script>
+
+	<script>
+
+		//关闭弹框
+		function closeMsg(){
+			//确定关闭
+			$("#alertMsg_btn1").click(function(){
+				$("#mask").hide();
+			})
+			//X关闭
+			$("#closeMsg").click(function(){
+				$("#mask").hide();
+			})
+		}
+		//封装弹框方法
+		function alertMsg(msg){
+			$("#alertMsg").show();
+			$("#alertMsg_info").html(msg);
+			$("#shadowDiv").show();
+		}
+		//支付成功，返回首页
+		$("#payment-post").click(function(){
+			alertMsg("支付成功，返回首页");
+			$("#shadowDiv").show();
+			$("#alertMsg_btn1").click(function(){
+				closeMsg();
+				location.href="index.html";
+
+			})
+		})
+
+		console.log(111);
+		//欢迎
+    $.ajax({
+        type:"get",
+        url:"./data/login/isLogin.php",
+        success:function (data) {
+			console.log($("#login"));
+            if(data.ok==1){
+                $("#login").css({display:"none"});
+                $("#regLink").css({display:"none"});
+                $("#welcome").css({display:"block"});
+                $(".userName").html("欢迎&nbsp;"+data.uname);
+            }
+			/*****************************************************/
+			//注销
+			$("#logout").click(function (e) {
+				 console.log(333);
+
+				 e.preventDefault();
+				 $.ajax({
+					 type:"get",
+					 url:"./data/login/logout.php",
+					 success:function () {
+						 location.reload(true);
+						 $("#login").css({display:"block"});
+						 $("#regLink").css({display:"block"});
+						 $("#welcome").css({display:"none"});
+		 
+					 },
+					 error:function () {
+						 alert("网络故障，请检查");
+					 }
+				 })
+			 })
+
+			//下拉显示隐藏
+			$("[data-toggle=dropdown]").parent().hover(
+					  function(){
+						  console.log("进入");
+						  $(this).children(".haveBottom").css({
+							  display:"block"
+						  });
+					  },
+					  function(){
+						 console.log("移出");
+						  $(this).children(".haveBottom").css({
+							  display:"none"
+						  });
+		  
+		 
+					  },
+			);
+
+			/**************************************************/
+        },
+
+        error:function () {
+            alert("网络故障，请检查！")
+        }
+
+    })
+
+	</script>	
+	
+
+	</body>
+</html>

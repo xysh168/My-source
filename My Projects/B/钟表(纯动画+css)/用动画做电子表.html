@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>我的钟表</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+			border:0;
+		}
+		body{
+			background:#ddd;
+		}
+		.watch{
+			position:relative;
+			top:50px;
+			left:350px;
+			width:580px;
+			height:580px;
+			border:40px solid rgba(114,235,241,0.3);
+			border-radius:50%;
+			background:url(image/img001.png) no-repeat;
+		}
+		.big-center,.hour,.minute,.second,.center{
+			position:absolute;
+		}
+		@keyframes turn{
+			0%{
+				transform:rotate(0deg);
+			}	
+			100%{
+				transform:rotate(360deg);
+			}
+		}
+		.hour{
+			width:3px;
+			height:3px;
+			border-top:120px solid #000;
+			border-bottom:120px solid transparent;
+			border-left:10px solid transparent;
+			border-right:10px solid #fF4F4F4;	
+			top:291px;
+			left:286px;
+			transform-origin:center top;
+			animation:turn 216000s linear infinite;
+		}
+		.minute{
+			width:2px;
+			height:2px;
+			border-top:160px solid #000;
+			border-bottom:160px solid transparent;
+			border-left:6px solid transparent;
+			border-right:6px solid #fF4F4F4;	
+			top:291px;
+			left:288.5px;
+			transform-origin:center top;
+			animation:turn 3600s linear infinite;
+		}
+		.second{
+			width:2px;
+			height:2px;
+			border-top:230px solid #000;
+			border-bottom:230px solid transparent;
+			border-left:6px solid transparent;
+			border-right:6px solid #fF4F4F4;	
+			top:291px;
+			left:288px;
+			transform-origin:center top;
+			animation:turn 60s linear infinite;
+		}
+		.center{
+			width:10px;
+			height:10px;
+			border-radius:50px;
+			background:#fff;
+			top:286px;
+			left:288px;
+		}
+		.big-center{
+			width:20px;
+			height:20px;
+			border-radius:50px;
+			background:#000;
+			top:281px;
+			left:283px;
+		}
+	</style>
+ </head>
+ <body>
+  <div class="watch">
+  		<div class="hour"></div>
+		<div class="minute "></div>
+		<div class="second"></div>
+		<div class="big-center"></div>
+		<div class="center"></div>
+	</div>
+ </body>
+</html>

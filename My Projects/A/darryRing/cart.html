@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header-cart.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/cart.css">
+	</head>
+	<body>
+		<div class="main" id="cart">
+			<!--1、页面头部-->
+			<header id="header"></header>
+			<!--2、主体部分_轮播图、登录、小圈-->
+			<section class="w1000">
+				<!--1、购物车头-->
+				<div class="cart-top clear">
+					<h3>购物车</h3>
+					<div class="shopping_steps rt">
+						<!--steps_active为当前步骤，steps_selected为已操作步骤-->
+						<div class="step1 steps_active">
+							<span>1</span>
+							<p>1.我的购物车</p>
+						</div>
+						<div class="step2">
+							<span>2</span>
+							<p>2. 填写订单信息 / 签署真爱协议</p>
+						</div>
+						<div class="step3">
+							<span>3</span>
+							<p>3.付款 完成购买</p>
+						</div>
+					</div>
+				</div>
+				<!--2、购物详情-->
+				<div class="cart-detail">
+					<table class="cart-table" border="1" cellpadding="10">
+						<thead>
+							<tr>
+								<td width="150px" class="pad-lf_20"><input type="checkbox" class="selAll" >全选</td>
+								<td width="570px">&nbsp;&nbsp;&nbsp;商品</td>
+								<td width="130px">价格</td>
+								<td width="150px" class="pad-lf_20">操作</td>
+							</tr>
+						</thead>
+					</table>
+					<div id="cart-info">
+						<table class="cart-table">
+							<tbody class="cart_tbody">
+								<tr>
+									<td width="30px" rowspan="2" align="center" class="pad-lf_20" valign="top"><input type="checkbox" ></td>
+									<td width="120px" rowspan="2" valign="top"><img width="100px" height="100px" src="img/cart/cart_ring/1509692818.jpg" alt=""></td>
+									<td width="280px" class="nopad-lf border-dashed"><strong>FOREVER系列 经典款 30分 F色 求婚钻戒</strong></td>
+									<td width="260px" class="nopad-lf border-dashed">
+										<span style="display: none">刻字内容不能超过10个字符</span>
+										<div class="buy-choose">
+											<input type="text" placeholder="刻字限5个汉字或10个字母">
+											<div class="choose-btn">
+												<i>♥</i>
+												<i>&</i>
+												<a href="">确定</a>
+											</div>
+										</div>
+									</td>
+									<td width="160px" class="border-dashed pay-money">
+										<span>¥31049</span>
+									</td>
+									<td width="150px" class="border-dashed">
+										<a href="">移入礼物清单</a><br>
+										<a href="">删除</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="nopad-lf ring-detail" colspan="3">
+										<strong>求婚钻戒信息</strong>
+										<div class="ringdetail-hide">
+											<p>主钻重量：50分</p>
+											<div class="ringInfo" style="display:none">
+												<p>戒托材质：分色18K金</p>
+												<p>刻字内容：</p>
+												<p>手寸大小：16</p>
+												<p>主钻形状：圆形</p>
+												<p>主钻颜色：H</p>
+												<p>产品编号：A16001</p>
+												<p>系列名称：LOVE LINE系列</p>
+											</div>
+										</div>
+										<strong class="pad-lf_20">主石副石信息</strong>
+										<div class="ringdetail-hide">
+											<p>主钻重量：50分</p>
+											<div class="ringInfo" style="display:none">
+												<p>戒托材质：分色18K金</p>
+												<p>刻字内容：</p>
+												<p>手寸大小：16</p>
+												<p>主钻形状：圆形</p>
+												<p>主钻颜色：H</p>
+												<p>产品编号：A16001</p>
+												<p>系列名称：LOVE LINE系列</p>
+											</div>
+										</div>
+									</td>
+									<td align="center" valign="top" class="pad-lf_20">
+										<a href="" class="ringdetail-hide" id="openDetail">展开查看详情>></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cart-security">
+						<span class="sec1">支持全球配送，实体店取货</span>
+						<span class="sec2">全程保价 无风险</span>
+						<span class="sec3">支付安全保障 安全支付系统采用SSL加密</span>
+					</div>
+					<div class="cart-pay">
+						<div class="pay-lf lf">
+							<span><input type="checkbox" class="selAll">全选</span>&nbsp;
+							<span><a href="" id="addGiftList">全部移入礼物清单</a></span>&nbsp;
+							<span><a href="ringlist.html">继续购物</a></span>
+						</div>
+						<div class="pay-rt rt pay_float shoppingcart_pay">
+							<p id="cart-num">
+								已选  <strong>1</strong> 件商品
+							</p>
+							<p id="cart-amount">
+								总价： <strong>¥13789</strong>
+							</p>
+							<p>免运费</p>
+							<a id="cart-post">立即结算</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--3、页面最底部-->
+			<footer id="footer"></footer>
+			<!--4.弹框 -->
+			<div id="mask">
+				<div id="alertMsg" style="display: none; position: fixed; left: 520px; top: 239.5px;z-index:150">
+					<span class="rt" id="closeMsg">X</span>
+					<p id="alertMsg_info">您尚未登录！</p>
+					<a id="alertMsg_btn1" href="javascript:void(0)"><cite>确定</cite></a>
+				</div>
+				<!--4.模态框 -->
+				<div id="shadowDiv" style="top: 0px; left: 0px; position: absolute; z-index: 100; background: rgba(0, 0, 0, 0.6); width: 100%; height: 1027px;display: none;"></div>
+			</div>
+
+
+		</div>
+	<script src="js/ajax.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/header-cart.js"></script>
+	<script src="js/cart.js"></script>
+	<script src="js/footer.js"></script>
+
+	<script>
+		//欢迎
+    $.ajax({
+        type:"get",
+        url:"./data/login/isLogin.php",
+        success:function (data) {
+			//console.log($("#login"));
+            if(data.ok==1){
+                $("#login").css({display:"none"});
+                $("#regLink").css({display:"none"});
+                $("#welcome").css({display:"block"});
+                $(".userName").html("欢迎&nbsp;"+data.uname);
+            }
+			/*****************************************************/
+			//注销
+			$("#logout").click(function (e) {
+				 //console.log(333);
+
+				 e.preventDefault();
+				 $.ajax({
+					 type:"get",
+					 url:"./data/login/logout.php",
+					 success:function () {
+						 location.reload(true);
+						 $("#login").css({display:"block"});
+						 $("#regLink").css({display:"block"});
+						 $("#welcome").css({display:"none"});
+		 
+					 },
+					 error:function () {
+						 alert("网络故障，请检查");
+					 }
+				 })
+			 })
+
+			//下拉显示隐藏
+			$("[data-toggle=dropdown]").parent().hover(
+					  function(){
+						 // console.log("进入");
+						  $(this).children(".haveBottom").css({
+							  display:"block"
+						  });
+					  },
+					  function(){
+						//  console.log("移出");
+						  $(this).children(".haveBottom").css({
+							  display:"none"
+						  });
+		  
+		 
+					  },
+			);
+
+			/**************************************************/
+        },
+
+        error:function () {
+            alert("网络故障，请检查！")
+        }
+
+    })
+
+	</script>	
+	
+
+	</body>
+</html>

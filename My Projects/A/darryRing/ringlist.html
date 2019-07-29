@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--使用最新引擎渲染网页-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--视口-->
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/ringlist.css">
+<!-- 		<link rel="stylesheet" href="css/bootstrap.css"> -->
+		<style>
+			div#header-container{
+				width:1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main" id="ringlist">
+			<!--1、页面头部-->
+			<header id="header"></header>
+			<!--2、主体部分_轮播图、面包屑导航、分类搜索、列表-->
+			<section>
+				<div class="action-main">
+					<!--2.1 轮播-->
+					<div class="banner" id="banner">
+						<ul class="banner-img" data-load="bannerImgs">
+							<!--<li>-->
+							<!--<a href="${product-details.html?lid=28}">-->
+							<!--<img src="img\shoplist\banner\15105685685a09727863a41.jpg">-->
+							<!--</a>-->
+							<!--</li>-->
+						</ul>
+					</div>
+					<!--2.2 白色底面包屑导航-->
+					<div class="breadWhite w1000">
+						<!--左-->
+						<div class="bread lf">
+							<a href="index.html">DR</a>
+							<span> > </span>
+							<a href="ringlist.html">求婚钻戒</a>
+							<span> > </span>
+							<span class="breadTitle"><a href="ringlist.html">所有商品</a></span>
+						</div>
+						<div class="bread-choose lf" >
+ 							<!--<a href="">LOCK FOREVER系列</a> -->
+						</div>
+						<!--右-->
+						<div class="search rt">
+							<input type="text" placeholder="My Heart系列" id="kwInput">
+							<a href="" id="btnSearch">搜索</a>
+							<a href="">高级</a>
+						</div>
+					</div>
+					<!--2.3 粉色部分-->
+					<div class="pink">
+						<div class="w1000">
+							<!--2.3.1 分类搜索-->
+							<div class="flSearch ">
+								<!--系列-->
+								<div class="series searchsame">
+									<span class="fl">系列</span>
+									<div class="dr_series fl">
+										<!--<a href="">MY HEART 系列</a>-->
+										<!--<a href="">LOCK FOREVER系列</a>-->
+									</div>
+									<span class="moreSeries rt" id="moreSeries">更多</span>
+								</div>
+								<!--重量-->
+								<div class="weight searchsame">
+									<span>重量(克拉)</span>
+									<a href="0-10">10分以下</a>
+									<a href="10-30">10分-30分</a>
+									<a href="30-50">30分-50分</a>
+									<a href="50-100">50分-1克拉</a>
+									<a href="100-200">1克拉以上</a>
+								</div>
+								<!--钻石形状-->
+								<div class="shape searchsame">
+									<i class="rt" id="moreCond" style="display:block" >更多条件</i>
+									<span>钻石形状</span>
+									<a href="shape=圆形">圆形</a>
+									<a href="shape=心形">心形</a>
+									<a href="shape=方形">方形</a>
+									<a href="shape=椭圆形">椭圆形</a>
+									<a href="shape=马眼形">马眼形</a>
+									<a href="shape=水滴形">水滴形</a>
+								</div>
+								<!--价格-->
+								<div class="price searchsame" style="display: none" id="priceCond">
+									<i class="rt" id="closePrice">收起</i>
+									<span>价格</span>
+									<a href="0-5000">5000以下</a>
+									<a href="5000-10000">5000-10000</a>
+									<a href="10000-20000">10000-20000</a>
+									<a href="20000-40000">20000-40000</a>
+									<a href="40000-100000">40000以上</a>
+									<input type="text" id="minPrice">
+									<label>-</label>
+									<input type="text" id="maxPrice">
+									<a id="priceBtn">确定</a>
+								</div>
+							</div>
+							<!--2.3.2 排序与分页-->
+							<div class="sortPage ">
+								<!--排序-->
+								<div class="sort lf">
+									<span>排序</span>
+									<i><a href="javascript:;" id="orderByComment">按人气</a></i>
+									<i><a href="javascript:;" id="orderByIshotsales">按新品</a></i>
+									<i><a href="javascript:;" id="orderByPrice">按价格</a></i>
+									<a href="" class="clearSearch" id="clearSearch" style="display:none">清除全部搜索</a>
+								</div>
+								<!--分页-->
+								<div class="pages rt clear">
+									<ul class="pagination rt">
+										<!--<li>上一页</li>-->
+										<!--<li>1</li>-->
+										<!--<li>2</li>-->
+										<!--<li>3</li>-->
+										<!--<li>下一页</li>-->
+									</ul>
+								</div>
+							</div>
+							<!--2.3.3 戒指列表-->
+							<div class="rings ">
+								<ul class="dr_ringlist ">
+									<li>
+										<a href=""><img src="img/ringlist/rings/md/1509692818.jpg" alt=""></a>
+										<div>
+											<!--价格-->
+											<div class="price">¥13689</div>
+											<!--描述-->
+											<p class="detail">FOREVER系列 经典款 30分 F色</p>
+											<!--按钮-->
+											<div class="buybtn">
+												<span>收藏</span>
+												<a href="">立即购买</a>
+											</div>
+											<!--评价-->
+											<div class="comment">
+												<i>评价：</i><span>2712</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href=""><img src="img/ringlist/rings/md/1509692818.jpg" alt=""></a>
+										<div>
+											<!--价格-->
+											<div class="price">¥13689</div>
+											<!--描述-->
+											<p class="detail">FOREVER系列 经典款 30分 F色</p>
+											<!--按钮-->
+											<div class="buybtn">
+												<span>收藏</span>
+												<a href="">立即购买</a>
+											</div>
+											<!--评价-->
+											<div class="comment">
+												<i>评价：</i><span>2712</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href=""><img src="img/ringlist/rings/md/1509692818.jpg" alt=""></a>
+										<div>
+											<!--价格-->
+											<div class="price">¥13689</div>
+											<!--描述-->
+											<p class="detail">FOREVER系列 经典款 30分 F色</p>
+											<!--按钮-->
+											<div class="buybtn">
+												<span>收藏</span>
+												<a href="">立即购买</a>
+											</div>
+											<!--评价-->
+											<div class="comment">
+												<i>评价：</i><span>2712</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--2.3.4 分页-->
+							<div class="pages clear rt bot" style="height:60px;">
+								<ul class="pagination rt clear " style="margin:15px">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--3、页面尾部-->
+			<footer id="footer"></footer>
+ 			<!--其他小部件 -->
+ 				<!--1.客服弹框 -->
+				<div class="kftc" style="display:none">
+					<span class="kftc_close"></span>
+					<ul class="kftc_border">
+						<li>
+							<a href=""></a>
+							<span class="sqkf">售前客服</span>
+							<p>
+								<i>商品选购</i>
+								<i>活动资讯</i>
+								<i>协助下单</i>	
+							</p>
+						</li>
+						<li>
+							<a href=""></a>
+							<span class="shkf">售后客服</span>
+							<p>
+								<i>定制进度</i>
+								<i>订单咨询</i>
+								<i>退/换货款</i>	
+							</p>
+						</li>
+						<li>
+							<a href=""></a>
+							<span class="otherHelp">帮助中心</span>
+						</li>
+						<li>
+							<div class="app_ewm"></div>
+						</li>
+					</ul>
+				</div>
+ 				<!--2.右边漂浮件 -->
+				<div class="quickService">
+ 					<!--1.在线客服 -->
+					<div class="onlinekf">
+						<div class="kfmsg">
+							<span></span>
+							<p>挑选满意的戒指款式<br>在线客服可以给您提供建议</p>
+						</div>
+						<img src="img/zxkf.gif" alt="">
+						<span>在线<br>客服</span>
+					</div>
+ 					<!--2.购物车 -->
+					<div class="quickCort">
+						<a href="" class="quick2" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">购物车</div>
+					</div>
+ 					<!--3.我的订单 -->
+					<div class="quickCort">
+						<a href="" class="quick3" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">我的订单</div>
+					</div>
+ 					<!--4.我的收藏 -->
+					<div class="quickCort">
+						<a href="" class="quick4" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">我的收藏</div>
+					</div>
+ 					<!--5.收藏网站 -->
+					<div class="quickCort">
+						<a href="" class="quick5" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">收藏网站</div>
+					</div>
+ 					<!--6.二维码 -->
+					<div class="quickCort">
+						<a href="" class="quick6" data-toggle="service"></a>
+						<div class="quickWord quickEwm"  style="display: none">
+							<img src="img/app_ewm.jpg" alt="">
+						</div>
+					</div>
+ 					<!--7.分享 -->
+					<div class="quickCort">
+						<a href="" class="quick7" data-toggle="service"></a>
+						<div class="quickWord comShare">
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+						</div>
+					</div>
+ 					<!--8.返回顶部 -->
+					<div  class="quickCort">
+						<a href="" class="totop"></a>
+						<div class="quickWord">返回顶部</div>
+					</div>
+				</div>
+ 				<!--3.左边电梯 -->
+		</div>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootlint.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/banner.js"></script>
+        <script src="js/ringlist.js"></script>
+        <script src="js/footer.js"></script>
+
+
+	</body>
+</html>

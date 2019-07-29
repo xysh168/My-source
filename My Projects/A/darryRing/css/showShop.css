@@ -1,0 +1,479 @@
+.clear{
+    clear:both;
+    content: "";
+    /*overflow:hidden;*/
+    display: block;
+}
+#showShop div.w1000{
+    width:1000px;
+    margin:0 auto;
+}
+#showShop .bread{
+    font-size: 0;
+    color: #666;
+    margin-left: 9px;
+    height: 70px;
+    line-height: 70px;
+}
+#showShop .bread a,#showShop .bread span{
+    font-size: 14px;
+    color: #666;
+    padding-left: 6px;
+}
+#showShop .bread a:hover{
+    color: #dbc7ba;
+}
+#showShop .sh-lf{
+    width: 680px;
+    height: 510px;
+    float: left;
+    display: inline;
+}
+#showShop .sh-rt{
+    background: url(../img/shoplist/shops/bkother.png) no-repeat;
+    width: 304px;
+    height: 510px;
+    text-align: center;
+    float: right;
+    display: inline;
+    font-family: "SimSun";
+}
+#showShop .title{
+    width: 280px;
+    margin: 30px auto 0;
+}
+#showShop .title h3{
+    font-size: 24px;
+    color: #ca8565;
+    border-bottom: 1px solid #ca8565;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+}
+#showShop .shopDetail_same{
+    padding: 0 38px;
+    margin-top: 26px;
+}
+#showShop .sh-rt .address strong{
+    background: url(../img/shoplist/shops/smallAdress.png) no-repeat left center;
+    cursor: pointer;
+}
+#showShop .nov_hr{
+    border-bottom: 1px solid #bfbfbf;
+    width: 50px;
+    height: 1px;
+    margin: 5px auto;
+}
+#showShop .shopDetail_same p{
+    font-size: 12px;
+    color: #888;
+    line-height: 20px;
+}
+#showShop .address p a{
+    margin: 0 4px;
+    color: #888;
+}
+#showShop .shopDetail_same a{
+    color: #ca8565;
+    margin: 0 4px;
+}
+#showShop .time strong{
+    background: url(../img/shoplist/shops/shoptime.png) no-repeat left center;
+}
+#showShop .shopDetail_same strong{
+    color: #666;
+    display: inline-block;
+    padding-left: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+#showShop .tel strong{
+    background: url(../img/shoplist/shops/shopphone.png) no-repeat left center;
+}
+#showShop .shopOrderAll{
+    padding-top: 30px;
+}
+#showShop .order-lf,#showShop .order-lf img{
+    width: 585px;
+    height: 449px;
+}
+.fl{
+    float: left;
+    display: inline;
+}
+.fr {
+    float: right;
+    display: inline;
+}
+ .order-rt{
+    height: 449px;
+    width:400px;
+}
+#showShop .enterOrder{
+    display: block;
+    background: #f1f0f0;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #888;
+}
+#showShop .enterOrder i{
+    font-weight: bold;
+    color: #ca8565;
+}
+#showShop .shopOrder{
+    background: #fafafa;
+    padding: 0 44px;
+    width: 312px;
+}
+#showShop .shopment{
+    height: 274px;
+    font-family: simsun;
+    padding: 25px 0;
+    width: 310px;
+    margin: 0 auto;
+}
+#showShop .shopment .order1{
+    font-size: 0;
+    position: relative;
+}
+#showShop .shopment .order1 span,#showShop .shopment .order1 strong,#showShop .shopment .order1 i{
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+    font-weight: 100;
+}
+#showShop .shopment .order1 strong{
+    color: #ca8565;
+}
+#showShop .shopment .order1 i{
+    color: #ca8565;
+    font-style: normal;
+}
+#showShop .shopment .shopWrite{
+    position: absolute;
+    text-decoration: underline;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #ca8565;
+}
+#showShop .orderChoose{
+    padding: 4px 0;
+    margin-left: 4px;
+    border-color: #e6e6e6;
+    border-radius: 0px;
+}
+#showShop select{
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    overflow: visible !important;
+    width: 111px;
+    padding: 4px 0;
+    margin-right: 4px;
+    border-color: #e6e6e6;
+
+}
+#showShop select option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+/*#showShop .orderChoose{*/
+    /*display: flex;*/
+/*}*/
+.shopment_choose select:first-child {
+    margin-left: 0;
+}
+#showShop .shopment .order3,#showShop .shopment .order5,#showShop .shopment .order7{
+    position: relative;
+}
+#showShop .shopment_same{
+    margin-top: 20px;
+    font-size: 0;
+}
+#showShop .shopment_same input{
+    padding: 8px 0 8px 8px;
+    border: 1px solid #e6e6e6;
+    background: #E0CBC6;
+    border-radius: 4px;
+    width: 302px;
+    outline: none;
+}
+
+.shopment_same input, .shopment_same select, .shopment_same i, .shopment_same span, .shopment_same em, .shopment_same strong {
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+    font-weight: 100;
+}
+.shopment_same strong{
+    color: #C57D5C;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#showShop .order5phone{
+    text-align: left;
+}
+#showShop .areaCode{
+    background: #E0CBC6;
+    width: 64px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 12px;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+#showShop div.areaCode>input{
+    width: 34px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#txttelNum{
+    width: 34px;
+}
+#showShop .areaCode .areaCodeUnit{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+/*#showShop .areaCode .areaCodeUnit img{*/
+    /*margin-top: 8px;*/
+/*}*/
+#showShop .order5phone input{
+    width: 234px;
+    outline: none;
+}
+#showShop .order7 input{
+    width: 140px;
+    margin-right: 10px;
+    background: url(../img/shoplist/shops/calendar.png) 126px center no-repeat #E0CBC6;
+}
+
+#showShop .order7 span{
+    width: 147px;
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background: url(../img/shoplist/shops/select.png) no-repeat #E0CBC6 92% center;
+    background-size: 10px auto;
+
+}
+.shopment_same span span{
+    background: #E0CBC6;
+    display: inline-block;
+    width: 139px;
+    height: 30px;
+    line-height: 30px;
+}
+.shopment_same select{
+    background: #E0CBC6;
+    position: absolute;
+    opacity: 0.01;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #E0CBC6;
+
+}
+#showShop .orderBtn{
+    display: block;
+    margin: 20px auto 0;
+    background: #c57d5c;
+    color: #fff;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    height: 38px;
+    line-height: 38px;
+    width: 200px;
+    text-align: center;
+    border-radius: 4px;
+}
+#showShop .shopOrderTips{
+    color: #999;
+    font: 12px/2em "microsoft yahei";
+    text-align: center;
+    margin: 10px 0;
+}
+#showShop .sameCity{
+    overflow: hidden;
+    height: 63px;
+    border-top: 1px solid #e0e0e0;
+    background: #f1f0f0;
+    padding-top: 16px;
+    padding-left: 18px;
+}
+#showShop .sameCity span{
+    margin-top: 1px;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+}
+#showShop .sameCity a{
+    color: #c57d5c;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+#showShop .shopDescribe{
+    font-size: 14px;
+    color: #888;
+    line-height: 32px;
+    margin:0 auto;
+    margin-top: 40px;
+}
+#showShop .shopDescribe p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑, "Microsoft YaHei";
+    font-weight: bold;
+}
+#showShop .shopDescribe p i{
+    font-size: 14px;
+    font-family: 微软雅黑, "Microsoft YaHei";
+    font-style: normal;
+    font-weight:normal;
+}
+#showShop .shopDescribe img{
+    margin:30px 0;
+}
+#allmap{
+    height:620px;
+    width:890px;
+    margin:40px auto;
+}
+#showShop .background1{
+    position: relative;
+    background: url(../img/sbg1.jpg) repeat-x;
+    height: 68px;
+    margin: 34px 0 20px;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    line-height: 82px;
+    text-indent: 32px;
+}
+#showShop .background1 span{
+    position: absolute;
+    width: 150px;
+    left: -33px;
+    top: -12px;
+    color: white;
+}
+#showShop .hotSalesList{
+    overflow: hidden;
+    margin-left: -21px;
+}
+#showShop .hotSalesList li{
+    position: relative;
+    background: #fff;
+    float: left;
+    height: 330px;
+    margin-left: 20px;
+}
+#showShop .hotSalesList a{
+    position: absolute;
+    background: #fff;
+    opacity: 0.01;
+    filter: alpha(opacity=0.01);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+#showShop .hotSalesList img{
+    width:235px;
+    height:235px;
+}
+#showShop .hotSalesInfo p{
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    color:#898989;
+}
+#showShop .hotSalesInfo p:first-child{
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#showShop .hotSalesInfo p i{
+    font-family: arial,"microsoft yahei";
+    color: #c57d5c;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

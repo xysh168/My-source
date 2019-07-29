@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--使用最新引擎渲染网页-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--视口-->
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/showShop.css">
+<!-- 		<link rel="stylesheet" href="css/bootstrap.css"> -->
+		<style>
+			div#header-container{
+				width:1000px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="main" id="showShop">
+			<!--1、页面头部-->
+			<header id="header"></header>
+			<!--2、主体部分_轮播图、登录、小圈-->
+			<section>
+				<div class="action-main">
+					<!--2.1 白色底面包屑导航-->
+					<div class="bread w1000">
+						<a href="index.html">DR</a>
+						<span> > </span>
+						<a href="shoplist.html">Darry Ring实体店分布</a>
+						<span> > </span>
+						<span class="breadTitle">深圳-来福士广场店</span>
+					</div>
+					<!--2.2 店铺信息-->
+					<div class="shopMain w1000 clear">
+						<!--2.2.1 头部主要信息-->
+						<div class="shopHead clear">
+							<!--左-->
+							<div class="sh-lf">
+								<img src="img\shoplist\shops\lg\150460522359ae742772f04.jpg" alt="">
+							</div>
+							<!--右-->
+							<div class="sh-rt">
+							<!--  
+								<div class="title">
+									<h3>香港-铜锣湾店</h3>
+								</div>
+								<div class="shopDetail_same address">
+									<strong>店铺地址</strong>
+									<div class="nov_hr"></div>
+									<p>
+										<a href="">香港特别行政区铜锣湾白沙道15号 （铜锣湾地铁站 F1 出口）</a>
+									</p>
+								</div>
+								<div class="shopDetail_same">
+									<a href="">详细地图</a>
+									<a href="">发送地址到手机</a>
+								</div>
+								<div class="shopDetail_same time">
+									<strong>营业时间</strong>
+									<div class="nov_hr"></div>
+									<p>10:30-21:00(节假日照常接待)</p>
+								</div>
+								<div class="shopDetail_same tel">
+									<strong>预约电话</strong>
+									<div class="nov_hr"></div>
+									<p>（+852）2152 3288</p>
+								</div>
+							-->
+							</div>
+						</div>
+						<!--2.2.2 店铺预约-->
+						<div class="shopOrderAll clear">
+							<!--左-->
+							<div class="order-lf fl">
+								<a href="">
+									<img src="img\shoplist\shops\15133292795a33927fab493.jpg" alt="">
+								</a>
+							</div>
+							<!--右-->
+							<div class="order-rt fr">
+								<!--预约进店-->
+								<span class="enterOrder">
+									已有 <i>37189</i>人预约进店
+								</span>
+								<!--店铺预约-->
+								<div class="shopOrder">
+									<div class="shopment">
+										<!--当前预约-->
+										<div class="order1">
+											<div class="orderAddress">
+												<span>当前预约：</span>
+												<strong>香港-铜锣湾店</strong>
+												<i class="shopWrite">修改</i>
+											</div>
+											<div class="orderChoose" style="display: none;">
+												<select name="" id="country">
+													<option value="">中国大陆</option>
+												</select>
+												<select name="" id="province">
+													<option value="">请选择省份</option>
+												</select>
+												<select name="" id="shops">
+													<option value="">请选择店铺</option>
+												</select>
+											</div>
+										</div>
+										<!--预约人姓名-->
+										<div class="order3 shopment_same">
+											<input type="text" placeholder="预约人姓名">
+											<strong>必填</strong>
+										</div>
+										<!--预约人手机号-->
+										<div class="order5 shopment_same">
+											<div class="order5phone">
+												<div class="areaCode fl">
+													<div class="areaCodeUnit">
+														<img src="img\shoplist\shops\flag.jpg" alt="">
+													</div>
+													<input type="text" id="txttelNum" value="086">
+												</div>
+												<input type="text" placeholder="预约人手机号码">
+											</div>
+											<strong>必填</strong>
+										</div>
+										<!--预约时间-->
+										<div class="order7 shopment_same">
+											<input type="date" value="2018-01-07">
+											<span>
+												<span>10:30-12:00</span>
+												<select class="timeArea">
+													<option>10:30-12:00</option>
+													<option>12:00-15:00</option>
+													<option>15:00-18:00</option>
+													<option>18:00-21:00</option>
+												</select>
+											</span>
+										</div>
+										<!--预约进店按钮-->
+										<a href="" class="orderBtn">预约进店</a>
+										<!--已开业提示-->
+										<p class="shopOrderTips" >
+											如您在预约过程中遇到任何问题<br>请致电 400-01-13520 或 在线咨询客服
+										</p>
+										<!--未开业提示-->
+										<p class="shopOrderTips" style="display: none">
+											我们将在开业前一天以短信或邮件形式通知您，<br>请注意查收
+										</p>
+									</div>
+								</div>
+								<!--同城推荐-->
+								<div class="sameCity">
+									<span class="fl">附近门店推荐:</span>
+									<div class="fl recommend">
+										<a href="">香港-铜锣湾店</a>
+										<a href="">香港-尖沙咀店</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--2.2.3 店铺描述-->
+						<div class="shopDescribe clear">
+							<p>DR香港铜锣湾店<br>
+								不同的东、西方浪漫风格，相同的真爱信仰
+							</p>
+							<p><img src="img\shoplist\shops\lg\1504602129.jpg" alt=""></p>
+							<p>DR香港铜锣湾店坐落于香江之畔<br>
+								<i>轻奢格调中透露着浓厚的浪漫生活气息</i>
+							</p>
+							<p><img src="img\shoplist\shops\lg\1504602161.jpg" alt=""></p>
+							<p>孙耀威陈美诗在包下DR铜锣湾店选购七夕礼物<br>
+								<i>为爱妻悉心甄选Lock Me系列，寓意“锁住一生真爱”</i>
+							</p>
+							<p><img src="img\shoplist\shops\lg\1504602335.jpg" alt=""></p>
+							<p>店内陈列饱含情感设计理念的DR珠宝作品<br>
+								<i>在这座融汇各域风情的城市，见证亘古不变的真爱</i>
+							</p>
+							<p><img src="img\shoplist\shops\lg\1504602404.jpg" alt=""></p>
+							<p>柔软沙发可供顾客休憩<br>
+								<i>舒适环境中挑选一枚蕴含特别意义的DR钻戒</i>
+							</p>
+							<p><img src="img\shoplist\shops\1504603475.jpg" alt=""></p>
+							<p>到店Tips<br>
+								<i>
+									乘坐地铁港岛线抵达铜锣湾站F1出口<br>
+									约行走一分钟，至白沙道15号DR香港铜锣湾店
+								</i>
+							</p>
+						</div>
+						<!--2.2.4 店铺地图-->
+						<div class="shopMap" id="allmap">
+						</div>
+						<!--2.2.5 热卖商品-->
+						<div class="hotSales">
+							<div class="background1">
+								<img src="img\shoplist\shops\hz_black.png" alt="" style="position: absolute;left: -32px;top: -32px">
+								<span>热卖商品</span>
+							</div>
+							<ul class="hotSalesList">
+								<!--<li>-->
+									<!--<a href=""></a>-->
+									<!--<img src="img\shoplist\hotsales\1514865321.jpg" alt="">-->
+									<!--<div class="hotSalesInfo">-->
+										<!--<p>LOCK FOREVER系列 心·锁唯一</p>-->
+										<!--<p>50分 G色 VS2 VG</p>-->
+										<!--<p>¥<i>33749</i></p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href=""></a>-->
+									<!--<img src="img\shoplist\hotsales\1509692818.jpg" alt="">-->
+									<!--<div class="hotSalesInfo">-->
+										<!--<p>LOCK FOREVER系列 心·锁唯一</p>-->
+										<!--<p>50分 G色 VS2 VG</p>-->
+										<!--<p>¥<i>33749</i></p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href=""></a>-->
+									<!--<img src="img\shoplist\hotsales\1489571757.jpg" alt="">-->
+									<!--<div class="hotSalesInfo">-->
+										<!--<p>LOCK FOREVER系列 心·锁唯一</p>-->
+										<!--<p>50分 G色 VS2 VG</p>-->
+										<!--<p>¥<i>33749</i></p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href=""></a>-->
+									<!--<img src="img\shoplist\hotsales\1486707266.png" alt="">-->
+									<!--<div class="hotSalesInfo">-->
+										<!--<p>LOCK FOREVER系列 心·锁唯一</p>-->
+										<!--<p>50分 G色 VS2 VG</p>-->
+										<!--<p>¥<i>33749</i></p>-->
+									<!--</div>-->
+								<!--</li>-->
+							</ul>
+						</div>
+						<!--2.2.6 会员专卖-->
+						<div class="memberSales">
+							<div class="background1">
+								<img src="img\shoplist\shops\hz_black.png" alt="" style="position: absolute;left: -32px;top: -32px">
+								<span>会员专卖</span>
+							</div>
+							<ul class="hotSalesList membersales">
+								<li>
+									<a href=""></a>
+									<img src="img\shoplist\membersales\1506430246.jpg" alt="">
+									<div class="hotSalesInfo">
+										<p>LOCK FOREVER系列 心·锁唯一</p>
+										<p>¥<i>33749</i></p>
+									</div>
+								</li>
+								<li>
+									<a href=""></a>
+									<img src="img\shoplist\membersales\1506496638.jpg" alt="">
+									<div class="hotSalesInfo">
+										<p>LOCK FOREVER系列 心·锁唯一</p>
+										<p>¥<i>33749</i></p>
+									</div>
+								</li>
+								<li>
+									<a href=""></a>
+									<img src="img\shoplist\membersales\1505786774.jpg" alt="">
+									<div class="hotSalesInfo">
+										<p>LOCK FOREVER系列 心·锁唯一</p>
+										<p>¥<i>33749</i></p>
+									</div>
+								</li>
+								<li>
+									<a href=""></a>
+									<img src="img\shoplist\membersales\1505786753.jpg" alt="">
+									<div class="hotSalesInfo">
+										<p>LOCK FOREVER系列 心·锁唯一</p>
+										<p>¥<i>33749</i></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--2.3 店铺地图-->
+					<!--2.4 各种弹框-->
+
+				</div>
+			</section>
+			<!--3、页面最底部-->
+			<footer id="footer"></footer>
+ 			<!--其他小部件 -->
+ 				<!--1.客服弹框 -->
+				<div class="kftc" style="display:none">
+					<span class="kftc_close"></span>
+					<ul class="kftc_border">
+						<li>
+							<a href=""></a>
+							<span class="sqkf">售前客服</span>
+							<p>
+								<i>商品选购</i>
+								<i>活动资讯</i>
+								<i>协助下单</i>	
+							</p>
+						</li>
+						<li>
+							<a href=""></a>
+							<span class="shkf">售后客服</span>
+							<p>
+								<i>定制进度</i>
+								<i>订单咨询</i>
+								<i>退/换货款</i>	
+							</p>
+						</li>
+						<li>
+							<a href=""></a>
+							<span class="otherHelp">帮助中心</span>
+						</li>
+						<li>
+							<div class="app_ewm"></div>
+						</li>
+					</ul>
+				</div>
+ 				<!--2.右边漂浮件 -->
+				<div class="quickService">
+ 					<!--1.在线客服 -->
+					<div class="onlinekf">
+						<div class="kfmsg">
+							<span></span>
+							<p>挑选满意的戒指款式<br>在线客服可以给您提供建议</p>
+						</div>
+						<img src="img/zxkf.gif" alt="">
+						<span>在线<br>客服</span>
+					</div>
+ 					<!--2.购物车 -->
+					<div class="quickCort">
+						<a href="" class="quick2" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">购物车</div>
+					</div>
+ 					<!--3.我的订单 -->
+					<div class="quickCort">
+						<a href="" class="quick3" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">我的订单</div>
+					</div>
+ 					<!--4.我的收藏 -->
+					<div class="quickCort">
+						<a href="" class="quick4" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">我的收藏</div>
+					</div>
+ 					<!--5.收藏网站 -->
+					<div class="quickCort">
+						<a href="" class="quick5" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">收藏网站</div>
+					</div>
+ 					<!--6.二维码 -->
+					<div class="quickCort">
+						<a href="" class="quick6" data-toggle="service"></a>
+						<div class="quickWord quickEwm"  style="display: none">
+							<img src="img/app_ewm.jpg" alt="">
+						</div>
+					</div>
+ 					<!--7.分享 -->
+					<div class="quickCort">
+						<a href="" class="quick7" data-toggle="service"></a>
+						<div class="quickWord comShare">
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+						</div>
+					</div>
+ 					<!--8.返回顶部 -->
+					<div  class="quickCort">
+						<a href="" class="totop"></a>
+						<div class="quickWord">返回顶部</div>
+					</div>
+				</div>
+ 				<!--3.左边电梯 -->
+
+
+		</div>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97"></script>
+		<script type="text/javascript">
+            // 百度地图API功能
+            var longitude=113.931837,latitude=22.517417;
+            var map = new BMap.Map("allmap");
+            map.centerAndZoom(new BMap.Point(longitude,latitude),15);
+            map.enableScrollWheelZoom(true);
+            // 用经纬度设置地图中心点
+            if(longitude!= "" && latitude!= ""){
+                map.clearOverlays();
+                var new_point = new BMap.Point(longitude,latitude);
+                var marker = new BMap.Marker(new_point);  // 创建标注
+                map.addOverlay(marker);              // 将标注添加到地图中
+                map.panTo(new_point);
+                map.addControl(new BMap.NavigationControl());//平移缩放控件
+
+                map.addControl(new BMap.ScaleControl());//比例尺
+                map.addControl(new BMap.OverviewMapControl());//缩略地图
+                map.addControl(new BMap.MapTypeControl());//地图类型
+                //map.setCurrentCity("深圳");//设置当前城市
+            }
+
+
+		</script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootlint.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/banner.js"></script>
+        <script src="js/shoplist.js"></script>
+        <script src="js/showShop.js"></script>
+        <script src="js/footer.js"></script>
+
+
+	</body>
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--使用最新引擎渲染网页-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--视口-->
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/shoplist.css">
+<!-- 		<link rel="stylesheet" href="css/bootstrap.css"> -->
+		<style>
+			div#header-container{
+				width:1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main" id="shoplist">
+			<!--1、页面头部-->
+			<header id="header"></header>
+			<!--2、主体部分_轮播图、登录、小圈-->
+			<section>
+				<div class="action-main">
+					<!--2.1 白色底面包屑导航-->
+					<div class="bread">
+						<a href="index.html">DR</a> > Darry Ring实体店分布
+					</div>
+					<!--2.2 轮播-->
+					<div class="banner" id="banner">
+                        <ul class="banner-img" data-load="bannerImgs">
+                            <!--<li>-->
+                                <!--<a href="${product-details.html?lid=28}">-->
+                                    <!--<img src="img\shoplist\banner\15105685685a09727863a41.jpg">-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+					<!--2.3 服务-->
+					<div class="shopServer">
+						<div class="shopServerDic zjsd">
+							<h3>钻戒试戴</h3>
+							<p>专人介绍，实体店试戴</p>
+						</div>
+						<div class="shopServerDic gzzd">
+							<h3>购钻指导</h3>
+							<p>专家指导定制您的钻戒</p>
+						</div>
+						<div class="shopServerOrder">
+							<h3>进店预约</h3>
+							<p>立即预约，到店试戴</p>
+						</div>
+						<div class="shopServerDic zjby">
+							<h3>钻戒保养</h3>
+							<p>提供钻戒保养等服务</p>
+						</div>
+						<div class="shopServerDic zjsj">
+							<h3>钻戒升级</h3>
+							<p>更换款式、以小换大等</p>
+						</div>
+					</div>
+					<!--2.4 搜索-->
+					<div class="shopSearch">
+						<!--左-->
+						<div class="shopSearch-lf lf">
+							<span>热门城市：</span>
+							<a href="javascript:;">香港</a>
+							<a href="javascript:;">北京</a>
+							<a href="javascript:;">上海</a>
+							<a href="javascript:;">广州</a>
+							<a href="javascript:;">深圳</a>
+							<a href="javascript:;">成都</a>
+							<a href="javascript:;">全部</a>
+						</div>
+						<!--右-->
+						<div class="shopSearch-rt">
+							<input type="text" name="search" id="searchShop" placeholder="请输入城市、省份名称进行查询">
+							<a href="javascript:;" id="citySearch">搜索</a>
+							<!--搜索下拉-->
+							<div class="shopSearch-bottom" style="display: none">
+								<div class="shopSearch-title" >
+									<a href="javascript:;">A-G</a>
+									<a href="javascript:;">N-H</a>
+									<a href="javascript:;">O-T</a>
+									<a href="javascript:;">A-G</a>
+								</div>
+								<div class="shopSearch-href">
+									<div class="shopSearch-same">
+										<a href="javascript:;">安徽</a>
+										<a href="javascript:;">北京</a>
+										<a href="javascript:;">重庆</a>
+										<a href="javascript:;">福建</a>
+										<a href="javascript:;">甘肃</a>
+										<a href="javascript:;">广东</a>
+										<a href="javascript:;">广西</a>
+										<a href="javascript:;">贵州</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--2.5 店铺列表-->
+					<div class="shopListMain" id="div_shoplist">
+						<div class="shopListSame">
+						<!--店铺列表信息
+							<div class="shopListTitle">香港</div>
+							<ul class="shopList fix">
+								<li class="shopInfo">
+									<div class="shopInfo-top">
+										<a href="" class="hreflink"></a>
+										<img src="img\shoplist\shops\md\150461121059ae8b8a3af54.jpg" alt="" width="300" height="225">
+										<h4>
+											香港-铜锣湾店
+											<i class="openSoon" style="display: none">即将开业</i>
+										</h4>
+									</div>
+									<p><a href="" >香港特别行政区铜锣湾白沙道15号 （铜锣湾地铁站 F1 出口）</a></p>
+									<p class="nomg">
+										<i class="showMapBtn"></i>
+										香港-铜锣湾店-港澳台
+									</p>
+									<p class="haveLine">
+										<i></i>
+										<span>营业时间</span>
+										<i></i>
+									</p>
+									<span>10:30-21:00（节假日照常接待）</span>
+									<p class="haveLine">
+										<i></i>
+										<span>预约电话</span>
+										<i></i>
+									</p>
+									<span>（+852）2152 3288</span>
+								</li>
+							</ul>
+						-->
+						</div>
+					</div>
+					<!--2.6 分页-->
+					<div class="pages"></div>
+				</div>
+			</section>
+			<!--3、页面最底部-->
+			<footer id="footer"></footer>
+ 			<!--其他小部件 -->
+ 				<!--1.客服弹框 -->
+				<div class="kftc" style="display:none">
+					<span class="kftc_close"></span>
+					<ul class="kftc_border">
+						<li>
+							<a href=""></a>
+							<span class="sqkf">售前客服</span>
+							<p>
+								<i>商品选购</i>
+								<i>活动资讯</i>
+								<i>协助下单</i>	
+							</p>
+						</li>
+						<li>
+							<a href=""></a>
+							<span class="shkf">售后客服</span>
+							<p>
+								<i>定制进度</i>
+								<i>订单咨询</i>
+								<i>退/换货款</i>	
+							</p>
+						</li>
+						<li>
+							<a href=""></a>
+							<span class="otherHelp">帮助中心</span>
+						</li>
+						<li>
+							<div class="app_ewm"></div>
+						</li>
+					</ul>
+				</div>
+ 				<!--2.右边漂浮件 -->
+				<div class="quickService">
+ 					<!--1.在线客服 -->
+					<div class="onlinekf">
+						<div class="kfmsg">
+							<span></span>
+							<p>挑选满意的戒指款式<br>在线客服可以给您提供建议</p>
+						</div>
+						<img src="img/zxkf.gif" alt="">
+						<span>在线<br>客服</span>
+					</div>
+ 					<!--2.购物车 -->
+					<div class="quickCort">
+						<a href="" class="quick2" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">购物车</div>
+					</div>
+ 					<!--3.我的订单 -->
+					<div class="quickCort">
+						<a href="" class="quick3" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">我的订单</div>
+					</div>
+ 					<!--4.我的收藏 -->
+					<div class="quickCort">
+						<a href="" class="quick4" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">我的收藏</div>
+					</div>
+ 					<!--5.收藏网站 -->
+					<div class="quickCort">
+						<a href="" class="quick5" data-toggle="service"></a>
+						<div class="quickWord" style="display: none">收藏网站</div>
+					</div>
+ 					<!--6.二维码 -->
+					<div class="quickCort">
+						<a href="" class="quick6" data-toggle="service"></a>
+						<div class="quickWord quickEwm"  style="display: none">
+							<img src="img/app_ewm.jpg" alt="">
+						</div>
+					</div>
+ 					<!--7.分享 -->
+					<div class="quickCort">
+						<a href="" class="quick7" data-toggle="service"></a>
+						<div class="quickWord comShare">
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+						</div>
+					</div>
+ 					<!--8.返回顶部 -->
+					<div  class="quickCort">
+						<a href="" class="totop"></a>
+						<div class="quickWord">返回顶部</div>
+					</div>
+				</div>
+ 				<!--3.左边电梯 -->
+
+
+		</div>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootlint.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/banner.js"></script>
+        <script src="js/shoplist.js"></script>
+        <script src="js/footer.js"></script>
+
+
+	</body>
+</html>

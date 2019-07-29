@@ -1,0 +1,341 @@
+#shoplist body{
+	/*background:url(../img/banner-index/9.jpg) no-repeat;*/
+	maigin-top:75px;
+}
+#shoplist section{
+    width:100%;
+    margin-top:70px;
+/*    border:1px solid red;*/
+/*    height:1500px;*/
+/*	line-height:70px;*/
+
+}
+#shoplist .action-main{
+     width:1000px;
+     margin:0 auto;
+     margin-top:-70px;
+ }
+#shoplist{
+/*	margin-top:20px;*/
+	font: inherit;
+}
+#shoplist #banner{
+    position:relative;
+    top:0;
+    left: 0;
+    height:400px;
+    overflow:hidden;
+}
+#shoplist .banner-img{
+    position:relative;
+    height:100%;
+}
+#shoplist .banner-img li{
+    float:left;
+}
+#shoplist .banner-img li a{
+    height:400px;
+}
+#shoplist .bread{
+	font-size:14px;
+	font-family: "SimSun";
+    height: 70px;
+	width:1000px;
+	margin:0 auto;
+	line-height:70px;
+}
+#shoplist .shopServer{
+    width: 100%;
+    margin: 34px auto 30px;
+    display:flex;
+}
+#shoplist .shopServerDic{
+    float: left;
+    width: 136px;
+    height: 56px;
+    padding-left: 54px;
+    margin-right: 10px;
+    background: url(../img/shoplist/shops/serverIcon-1.png) no-repeat;
+    margin-top: 16px;
+}
+#shoplist .shopServerOrder{
+    background: url(../img/shoplist/shops/bigBtn.png) no-repeat center center;
+    float: left;
+    width: 165px;
+    height: 100px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background .3s;
+}
+#shoplist .shopServerOrder h3{
+    font-size: 16px;
+    color: #fff;
+    height: 26px;
+    line-height: 26px;
+    padding-top: 16px;
+}
+#shoplist .shopServerOrder p{
+    height: 28px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 28px;
+}
+#shoplist .shopServerDic h3{
+    line-height: 16px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d39b81;
+}
+#shoplist .shopServerDic p{
+    padding-right: 1em;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    font-family: simsun;
+}
+#shoplist div.zjsd{
+    background-position: 10px 16px;
+}
+#shoplist div.gzzd{
+    background-position: 10px -98px;
+}
+#shoplist div.zjby{
+     background-position: 10px -208px;
+}
+#shoplist div.zjsj{
+      background-position: 10px -322px;
+}
+#shoplist .shopSearch{
+    padding: 0 26px;
+    background: #f8f8f8;
+    height: 70px;
+    line-height: 70px;
+}
+#shoplist .shopSearch-lf{
+    float: left;
+    display: inline;
+}
+#shoplist .shopSearch-lf a,#shoplist .shopSearch-lf span{
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+}
+#shoplist .shopSearch-lf a{
+    color: #c57d5c;
+    margin-right: 18px;
+}
+#shoplist .shopSearch-lf a:last-child{
+    color:#999;
+}
+#shoplist .shopSearch-rt{
+    position: relative;
+    z-index: 2;
+    float: right;
+    display: inline;
+}
+#shoplist .shopSearch-rt input{
+    border: 1px solid #e6e6e6;
+    padding: 5px 0 5px 8px;
+    width: 300px;
+    border-radius: 3px;
+    vertical-align: middle;
+    outline:none;
+}
+#shoplist .shopSearch-rt>a{
+    height: 22px;
+    line-height: 22px;
+    padding: 2px 20px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background: #c57d5c;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#shoplist .shopSearch-bottom{
+    display: block;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    width: 312px;
+    background: #fff;
+    font-family: simsun;
+    box-shadow: 0 2px 2px 1px #e0e0e0;
+}
+#shoplist .shopSearch-title{
+    font-size: 0;
+    margin-top: 1px;
+    line-height: 26px;
+}
+#shoplist .shopSearch-href{
+    font-size: 0;
+    padding: 12px 18px;
+    line-height: 22px;
+}
+#shoplist .shopSearch-title a{
+    display: inline-block;
+    width: 76px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #e6e6e6;
+    font-size: 14px;
+    color: #c57d5c;
+    margin-left: 1px;
+}
+#shoplist .shopSearch-href a{
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+    color: #666;
+    margin-right: 18px;
+}
+#shoplist .shopSearch-href a:hover{
+    color: #C57D5C;
+}
+#shoplist .shopListMain{
+    width: 1000px;
+    margin-top: 44px;
+}
+#shoplist .shopListSame{
+    margin-bottom: 32px;
+    text-align: center;
+}
+#shoplist .shopListTitle{
+    background: url(../img/shoplist/shops/titleLine.png) no-repeat center center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #c67c59;
+    text-align: center;
+    margin-bottom: 26px;
+}
+#shoplist .shopList{
+    margin-left: -50px;
+}
+.shopInfo{
+    float: left;
+    width: 300px;
+    height: 522px;
+    margin-left: 50px;
+    text-align: center;
+}
+#shoplist .shopInfo-top{
+    position: relative;
+}
+#shoplist .shopInfo-top .hreflink{
+    position: absolute;
+    opacity: 0.01;
+    filter: alpha(opacity=0.01);
+    background: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+#shoplist .shopInfo-top h4{
+    height: 46px;
+    line-height: 46px;
+    margin-top: 24px;
+    border: 1px dashed #ddd;
+    font-size: 18px;
+    position: relative;
+    color: #c67c59;
+}
+#shoplist .shopInfo-top h4 .openSoon{
+    line-height: 36px;
+    background: url(../img/shop/toopen.png) no-repeat left center;
+    font-size: 12px;
+    color: #c67c59;
+    padding-left: 26px;
+    right: 0;
+    top: 2px;
+}
+#shoplist .shopInfo p{
+	line-height: 24px;
+    color: #888;
+    font-size: 14px;
+    width: 260px;
+    margin: 5px auto 0;
+}
+#shoplist .shopInfo p a{
+	color:#888;
+}
+#shoplist .shopInfo p a:hover,#shoplist .shopInfo p:hover{
+    color: #c67c59;
+}
+p.nomg{
+	margin:0 auto;
+}
+#shoplist .showMapBtn{
+	display: inline-block;
+    width: 16px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(../img/shoplist/shops/smallAdress.png) no-repeat;
+    vertical-align: middle;
+}
+#shoplist .shopInfo .haveLine{
+	margin-bottom: 4px;
+}
+#shoplist .shopInfo>span{
+	line-height:24px;
+	font-size:14px;
+    color: #888;
+    width: 260px;
+    margin: 12px auto 0;
+}
+#shoplist .haveLine i{
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px dashed #ddd;
+    width: 46px;
+    height: 1px;
+}
+#shoplist .haveLine span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    color: #c67c59;
+}
+.fix:after,.clearfix:after{
+	content:" ";
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+	line-height:0;
+}
+.fix,.clearfix{*zoom:1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

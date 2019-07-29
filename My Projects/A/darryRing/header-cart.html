@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Darry Ring 官网</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header-cart.css">
+	</head>
+	<body>
+		<!--header-->
+		<div class="header-cart">
+			<!--main-->
+			<div id="header-cart-main">
+				<!--左-->
+					<div id="header-cart-left" class="lf">
+						<a href="index.html"><img src="img/drlogo.png"></a>
+					</div>
+				<!--右-->
+					<div id="header-cart-right" class="rt">
+						<ul>
+							<li>
+								<a href="login.html" id="login" style="display: block;">登录&nbsp;/&nbsp;</a>
+								<div class="welcome fl" id="welcome" style="display: none;height:25px;">
+									<a class="userName" style="color:#C67C59;font-size: 14px">欢迎 ufNsHD</a>
+									<img src="img/bottom.png">
+									<div class="loginIn fix haveBottom" id="userLogin" style="display: none;" data-toggle="dropdown">
+										<a href="order.html">我的订单</a><br>
+										<a href="cart.html">购物车</a><br>
+										<a href="">我的收藏</a><br>
+										<a href="">个人中心</a><br>
+										<a href="" id="logout">退出</a><br>
+									</div>
+								</div>
+							</li>
+							<li><a href="register.html" id="regLink">&nbsp;加入DR族&nbsp;/</a> </li>
+							<li>
+								&nbsp;<img src="img/telleft.png">
+								400-01-13520 &nbsp;/
+							</li>
+							<li>
+								<a href="javascript:;">
+								 &nbsp;帮助中心 </a>
+								<img src="img/bread_right.png">
+							</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		<script src="js/ajax.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script>
+//		console.log(111);
+//		//欢迎
+//    $.ajax({
+//        type:"get",
+//        url:"./data/login/isLogin.php",
+//        success:function (data) {
+//			console.log(data);
+//            if(data.ok==1){
+//                $("#login").css({display:"none"});
+//                $("#regLink").css({display:"none"});
+//                $("#welcome").css({display:"block"});
+//                $(".userName").html("欢迎&nbsp;"+data.uname);
+//            }
+//        },
+//        error:function () {
+//            alert("网络故障，请检查！")
+//        }
+//
+//    })
+//     //退出
+//     $("#logout").click(function (e) {
+//         e.preventDefault();
+//         $.ajax({
+//             type:"get",
+//             url:"./data/login/logout.php",
+//             success:function () {
+//                 location.reload(true);
+//                 $("#login").css({display:"block"});
+//                 $("#regLink").css({display:"block"});
+//                 $("#welcome").css({display:"none"});
+// 
+//             },
+//             error:function () {
+//                 alert("网络故障，请检查");
+//             }
+//         })
+//     })
+// 	//下拉显示隐藏
+// 	$("[data-toggle=dropdown]").parent().hover(
+//             function(){
+//                 console.log("进入");
+//                 $(this).children(".haveBottom").css({
+//                     display:"block"
+//                 });
+//             },
+//             function(){
+//                console.log("移出");
+//                 $(this).children(".haveBottom").css({
+//                     display:"none"
+//                 });
+// 
+//
+//             },
+//         );
+
+
+		</script>
+		
+		<script src="js/header-cart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+.reg-container{
+	background: url("../img/register/bg.jpg") no-repeat;
+	width:100%;
+	
+	height:800px;
+	position:relative;
+}
+.reg-container>h2{
+	text-align:center;
+}
+
+.panel{
+	border: 1px solid #aaa; */
+    border-radius: 2px;
+    /* box-shadow: 0 0 5px #aaa; */
+    min-height: 100px;
+    padding: 1.2em .6em;
+    width: 560px;
+    height: 630px;
+    /* border: 1px solid blue; */
+    margin-right: 125px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.4);
+}
+.rt{
+	float:right;
+}
+form{
+	display:block;
+}
+#form-register .txt{
+	padding:10px;
+}
+#form-register .txt p{
+	padding-left:80px;
+	display:inline-block;
+}
+#form-register .txt p span a {
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    right: -207px;
+}
+#form-register .txt p span a{
+	font-size:16px;
+	color:#fff;
+	position:relative;
+	text-decoration:none;
+}
+
+.form-group{
+	margin-bottom:20px;
+}
+.form-group >label{
+	display:inline-block;
+	width:90px;
+	text-align:right;
+	color:#fff;
+	font-size:14px;
+}
+.form-group >input{
+	padding:10px 20px;
+	width:235px;
+	margin-top:12px;
+	border-radius:2px;
+}
+input{
+	border:none;
+}
+.form-group > span{
+	/* display:inline-block; */
+	width:270px;
+	color:#fff;
+	padding:4px;
+	border-radius:2px;
+	font-size:12px;
+
+}
+.hidden{
+	display:none;
+}
+.msg-default{
+	background-color:#999;
+}
+input[type="button"]{
+	background:#0aa1ed;
+	width:276px;
+	color:#fff;
+	border-radius:2px;
+	cursor:pointer;
+}
+input[type="reset"]{
+	background:#0aa1ed;
+	width:64px;
+	color:#fff;
+	border-radius:2px;
+	cursor:pointer;
+	text-align:center;
+}
+.msg-error{
+	background-color:red;
+}
+#shadowDiv{
+	top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.6);
+    width: 1244px;
+    height: 1027px;
+}
+#alertMsg{
+	display:block;
+	position:fixed;
+	left:422px;
+	top:40px;
+	background:orange;
+	width:350px;
+	height:200px;
+}
+#alertMsg_info{
+	text-align:center;
+}
+#alertMsg_info>p{
+	text-align:center;
+}
+#alertMsg_btn1>cite{
+	text-align:center;
+}

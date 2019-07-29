@@ -1,0 +1,906 @@
+#ringDetail section{
+	position:relative;
+}
+#ringDetail .w1000{
+    width:1000px;
+    margin:0 auto;
+}
+#ringDetail .breadWhite{
+    height:70px;
+    font-family: "SimSun";
+}
+.lf{
+    float:left;
+    display:inline;
+}
+.rt{
+    float:right;
+    display:inline;
+}
+.clear{
+	content:"";
+	clear:both;
+	display:block;
+}
+#ringDetail .action-main .bread{
+    color: #666;
+    margin-left: 9px;
+    height: 70px;
+    line-height: 70px;
+	position:absolute;
+	font-weight:500;
+	font-size:14px;
+}
+#ringDetail .action-main .bread a:hover{
+	color:#dbc7ba;
+}
+#ringDetail .ringMain{
+	width:1000px;
+	margin:0 auto;
+	position: relative;
+    top: 70px;
+/*    height:750px;*/
+}
+#ringDetail .ringbuy_cort{
+/*	padding-bottom: 60px;*/
+	height:700px;
+	position: relative;
+
+
+}
+#ringDetail .ringbuy_hotmatch{
+    position: relative;
+	top:10px;
+	height:275px;
+	display:block;
+}
+#ringDetail .ringbuy_detail{
+    position: relative;
+	top:10px;
+	margin-bottom:100px;
+}
+
+#ringDetail .cort-rt{
+	width: 520px;
+}
+#ringDetail .cort-rt .rt-title{
+	font-size: 24px;
+    color: #000;
+	font-family: "microsoft yahei";
+    margin-bottom: 8px;
+}
+#ringDetail .cort-rt .rt-price{
+	overflow: hidden;
+    height: 34px;
+    line-height: 34px;
+    margin: 14px 0;
+}
+#ringDetail .cort-rt .rt-price span{
+    font-family: "microsoft yahei";
+    color: #c57d5c;
+    font-size: 24px;
+}
+#ringDetail .cort-rt .rt-price a{
+	font-size: 12px;
+    color: #999;
+}
+#ringDetail .cort-rt .rt-price a:hover{
+	color:#c57d5c;
+}
+#ringDetail .cort-rt .rt-comm{
+	overflow: hidden;
+    background: #f9f9f9;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+    padding: 7px 0;
+
+}
+#ringDetail .cort-rt .rt-comm li{
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    border-left: 1px dashed #ddd;
+    width: 173px;
+    text-align: center;
+}
+#ringDetail .cort-rt .rt-comm li:first-child{
+    border: none;
+    width: 170px;
+}
+#ringDetail .cort-rt .rt-comm span,#ringDetail .cort-rt .rt-comm i,#ringDetail .cort-rt .rt-comm a{
+    font-size: 12px;
+    vertical-align: middle;
+}
+#ringDetail .cort-rt .rt-comm span{
+    color: #999;
+}
+#ringDetail .cort-rt .rt-comm i{
+	color: #ffacac;
+	font-style:normal;
+}
+#ringDetail .cort-rt .rt-comm a{
+	color: #c57d5c;
+}
+
+#ringDetail .cort-rt .rt-parames{
+	overflow: hidden;
+    margin-left: -20px;
+    padding-top: 18px;
+}
+#ringDetail .cort-rt .rt-parames li{
+    float: left;
+    height: 20px;
+    width: 240px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+	list-style:none;
+}
+#ringDetail .cort-rt .rt-parames span{
+    font-size: 12px;
+    color: #999;
+    vertical-align: middle;
+}
+#ringDetail .cort-rt .rt-choose{
+    background: #fffdf8;
+    padding: 20px;
+    font-size: 0;
+    padding-right: 0;
+    margin-top: 10px;
+    height:200px;
+}
+#ringDetail .rt-choose .rt-texture,#ringDetail .rt-choose .rt-mainDiam{
+    margin-bottom: 14px;
+}
+#ringDetail .rt-choose span{
+	color: #838383;
+    font-size: 12px;
+    margin-right: 14px;
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+}
+#ringDetail .rt-choose span,#ringDetail .rt-choose i,
+#ringDetail .rt-choose em,#ringDetail .rt-choose input,
+#ringDetail .rt-choose select
+{
+    vertical-align: middle;
+}
+#ringDetail .rt-choose .rt-texture i,#ringDetail .rt-choose .rt-mainDiam a{
+    display: inline-block;
+    width: 63px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #aeaeae;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 6px;
+    box-sizing: border-box;
+}
+#ringDetail .rt-choose .rt-texture i:hover{
+    border: 2px solid #c57d5d;
+}
+#ringDetail i{
+	font-style:normal;
+}
+#ringDetail .rt-choose .rt-texture em{
+	color: #aeaeae;
+    font-size: 12px;
+    width: 158px;
+    display: inline-block;
+    line-height: 16px;
+	font-style:normal;
+}
+ #ringDetail .cort-rt .rt-choose i.chooseit{
+	width: 61px;
+    height: 26px;
+    line-height: 26px;
+    border: 2px solid #c57d5d;
+    background: url(../img/ringlist/right.png) no-repeat right bottom;
+}
+#ringDetail .rt-choose .rt-mainDiam span{
+	margin-top: 10px;
+}
+#ringDetail .rt-choose .rt-mainDiam{
+    width: 426px;
+}
+#ringDetail .rt-choose .rt-mainDiam .box{
+    position: relative;
+    left: 64px;
+    top: -22px;
+    width:440px;
+    height:106px;
+
+}
+/*#ringDetail .rt-choose .rt-mainDiam .box a{*/
+    /*border: 2px solid transparent;*/
+/*}*/
+#ringDetail .rt-choose .rt-mainDiam .box a:hover{
+    border: 2px solid #c57d5d;
+    box-sizing: border-box;
+}
+/*#ringDetail .rt-choose .rt-mainDiam .box .gjdz:hover{*/
+/*	border: none;*/
+/*    width: 136px;*/
+/*    height: 30px;*/
+/*    background: url(../img/Ringbuy/gjdz.jpg) no-repeat;*/
+/*    background-position: 0 -30px;*/
+/*}*/
+#ringDetail .rt-choose .rt-mainDiam .box .chooseit{
+    width: 61px;
+    height: 26px;
+    line-height: 26px;
+    border: 2px solid #c57d5d;
+    background: url(../img/ringlist/right.png) no-repeat right bottom;
+}
+#ringDetail .rt-choose .rt-mainDiam a{
+	margin-bottom: 6px;
+    vertical-align: middle;
+}
+#ringDetail .rt-choose .rt-mainDiam .ring-gjdz{
+	background: url(../img/ringlist/gjdz.jpg) no-repeat;
+    width: 136px;
+    height: 30px;
+    border: none;
+}
+#ringDetail .rt-choose .rt-mainDiam a.ring-gjdz:hover{
+    background-position: 0 -30px;
+	border: none;
+    width: 136px;
+    height: 30px;
+}
+#ringDetail .rt-choose .rt-mainDiam .ring-tochoose{
+    width: auto;
+    height: auto;
+    color: #838383;
+    background: none;
+    border: none;
+}
+#ringDetail .rt-choose .rt-mainDiam a.ring-tochoose:hover{
+	border:none;
+	color:#c57d5c;
+}
+#ringDetail .rt-choose .rt-handsize{
+	position: relative;
+	top:-30px;
+}
+#ringDetail .rt-choose .rt-handsize select{
+    padding: 4px 0;
+    margin-right: 10px;
+    width: 82px;
+}
+#ringDetail .rt-choose .rt-handsize input{
+	padding: 5px 0 5px 4px;
+    width: 135px;
+    margin-right: 10px;
+    border: 1px solid #aeaeae;
+}
+#ringDetail .rt-choose .rt-handsize i{
+	display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #aeaeae;
+    font-size: 16px;
+    color: #aeaeae;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#ringDetail .rt-choose .rt-handsize em{
+    display: inline-block;
+    width: 64px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #c57d5c;
+    text-align: center;
+    font-size: 12px;
+    color: #c57d5c;
+    cursor: pointer;
+    font-style:normal;
+}
+#ringDetail .rt-choose .rt-handsize em:hover{
+	color: #d49e85;
+    border: 1px solid #d49e85;
+}
+#ringDetail .rt-choose .rt-handsize p{
+    margin-left: 66px;
+    margin-top: 4px;
+    clear: both;
+}
+#ringDetail .rt-choose .rt-handsize p a{
+    font-size: 12px;
+    color: #838383;
+}
+#ringDetail .rt-choose .rt-handsize p a:hover{
+	color: #c57d5c;
+}
+#ringDetail .rt-choose .rt-handsize div{
+	font-size: 12px;
+    color: #ff7372;
+    position: absolute;
+    bottom: 0;
+    left: 156px;
+    display: block;
+}
+#ringDetail .cort-rt .rt-addcart{
+	font-size: 0;
+    font-family: "microsoft yahei";
+    margin: 30px 0 30px 20px;
+}
+#ringDetail .cort-rt .rt-addcart a{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#ringDetail .cort-rt #addCart{
+	width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #c57d5c;
+    color: #fff;
+}
+#ringDetail .cort-rt #addCart:hover{
+	background: #d49e85;
+}
+#ringDetail .cort-rt #addCart span{
+	background: url(../img/ringlist/shopcart.png) no-repeat left center;
+    padding-left: 26px;
+}
+#buyit{
+	width: 178px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #c57d5c;
+    color: #c57d5c;
+}
+#buyit:hover{
+    color: #d49e85;
+    border: 1px solid #d49e85;
+}
+#join-gift{
+	font-size: 14px;
+    color: #dbb2a2;
+    background: url(../img/ringlist/tosc.png) no-repeat left center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 26px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#ringDetail #join-gift{
+    background: url(../img/ringlist/gift.png) no-repeat left center;
+    color: #c57d5c;
+}
+#ringDetail .cort-rt .rt-delivery{
+    font-size: 12px;
+    color: #838383;
+    padding-left: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+}
+#ringDetail .cort-rt .rt-promise{
+    padding: 14px 0 14px 20px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 0;
+}
+#ringDetail .cort-rt .rt-promise strong{
+    font-size: 12px;
+    color: #838383;
+    vertical-align: middle;
+    margin-right: 12px;
+    font-weight:bold;
+}
+#ringDetail .cort-rt .rt-promise span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #838383;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 28px;
+    margin-right: 14px;
+}
+#ringDetail .cort-rt .promise1{
+    background: url(../img/ringlist/sev_first.png) no-repeat left center;
+}
+#ringDetail .cort-rt .promise2{
+     background: url(../img/ringlist/sev_sec.png) no-repeat left center;
+}
+#ringDetail .cort-rt .promise3{
+      background: url(../img/ringlist/sev_third.png) no-repeat left center;
+}
+#ringDetail .cort-rt .rt-promise a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #fff;
+    background: #d9b39b;
+    width: 85px;
+    height: 24px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 60px;
+}
+#ringDetail .cort-rt .rt-promise a i{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    background: url(../img/ringlist/thekf.gif) no-repeat left center;
+    margin-top: 4px;
+	padding-left: 23px;
+}
+
+#ringDetail .ringbuy_cort .cort-lf{
+    width: 460px;
+    position: relative;
+}
+#ringDetail .ringbuy_cort .cort-lf .lf-bigRing{
+    position: relative;
+    height: 460px;
+}
+#ringDetail .cort-lf .lf-bigRing li{
+    width: 458px;
+    height: 458px;
+    border: 1px solid #f3f3f3;
+    position: absolute;
+    display: block;
+}
+#ringDetail .cort-lf .lf-bigRing li img{
+    width: 458px;
+    height:458px;
+}
+#ringDetail .cort-lf .lf-bigRing span{
+    position: absolute;
+/*    left: 138px;*/
+/*    top: 308px;*/
+    display: none;
+    width: 150px;
+    height: 150px;
+    background: rgb(153, 153, 153);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: move;
+    opacity: 0.4;
+    zoom: 1;
+	z-index:100;
+}
+#ringDetail .cort-lf .lf-bigRing div{
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    right: -385px;
+    border: 1px solid rgb(204, 204, 204);
+    z-index: 100;
+    display: none;
+}
+#ringDetail .cort-lf .lf-bigRing div img{
+    position: absolute;
+    left: -6.46753px;
+    top: -498px;
+    width: 800px;
+    height: 800px;
+}
+#ringDetail .cort-lf .lf-smallRing{
+    position: relative;
+    height: 60px;
+    padding: 20px 0;
+}
+#ringDetail .sr-lf,
+#ringDetail .sr-rt,
+#ringDetail .sr-lfend,
+#ringDetail .sr-rtend
+{
+    background: url(../img/ringlist/pre_next.png) no-repeat;
+    position: absolute;
+    width: 10px;
+    height: 19px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+    z-index: 0;
+}
+#ringDetail .sr-lfend{
+    background-position: 0 0;
+    left: 15px;
+}
+#ringDetail .sr-lf{
+	background-position: 0 -20px;
+    left: 15px;
+}
+#ringDetail  .sr-rt{
+    background-position: -10px 0;
+    right: 15px;
+}
+#ringDetail .sr-rtend{
+    background-position: -10px -20px;
+    right: 15px;
+}
+
+#ringDetail .lf-smallRing .small-overflow{
+    width: 384px;
+    height: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#ringDetail .lf-smallRing .buy-small{
+    width:800px;
+}
+#ringDetail .lf-smallRing .buy-small li{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+
+}
+#ringDetail .lf-smallRing .buy-small .sm-select{
+    width: 58px;
+    height: 58px;
+    border: 1px solid #ffa6a6;
+}
+#ringDetail .lf-smallRing .buy-small li img{
+    width: 100%;
+    vertical-align: middle;
+}
+#ringDetail .lf-shareRing{
+    text-align: center;
+    padding: 10px 0;
+}
+#ringDetail .lf-shareRing span{
+    vertical-align: middle;
+    font-size: 12px;
+    color: #7f7f7f;
+}
+#ringDetail .lf-shareRing a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/ringlist/ico-shares.png);
+    background-repeat: no-repeat;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+#ringDetail .lf-shareRing a.weibo{
+    background-position: 0 0;
+}
+#ringDetail .lf-shareRing a.qzone{
+    background-position: -31px 0;
+}
+#ringDetail .lf-shareRing a.Qweibo{
+    background-position: -62px 0;
+}
+#ringDetail .lf-shareRing a.renren{
+    background-position: -93px 0;
+}
+#ringDetail .lf-shareRing a.douban{
+    background-position: 0 -34px;
+}
+#ringDetail .lf-shareRing a.weibo:hover{
+    background-position: 0 -68px;
+}
+#ringDetail .lf-shareRing a.qzone:hover{
+    background-position: -31px -68px;
+}
+#ringDetail .lf-shareRing a.Qweibo:hover{
+    background-position: -62px -68px;
+}
+#ringDetail .lf-shareRing a.renren:hover{
+    background-position: -93px -68px;
+}
+#ringDetail .lf-shareRing a.douban:hover{
+    background-position: 0 -102px;
+}
+#ringDetail .lf-kzyl{
+    background: url(../img/ringlist/kzyl.jpg) no-repeat;
+    width: 96px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 404px;
+    font-size: 12px;
+    color: #fff;
+    font-family: "microsoft yahei";
+    display: none;
+}
+
+#ringDetail .ringbuy_detail .detail-tab,#ringDetail .hotmatch-top{
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid #eaeceb;
+    font-size: 0;
+    height: 25px;
+    margin-bottom: 40px;
+}
+#ringDetail .detail-tab span,#ringDetail .hotmatch-top span{
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+    width: 165px;
+    text-align: center;
+    border-left: 2px solid #eaeceb;
+    height: 14px;
+    cursor: pointer;
+}
+#ringDetail .detail-tab span:first-child,
+#ringDetail .hotmatch-top span:first-child{
+    border-left: none;
+}
+#ringDetail .more{
+	font-size: 0;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+#ringDetail .more a{
+    font-size: 12px;
+    color: #222;
+    margin-left: 20px;
+}
+#ringDetail .detail-tab strong{
+    display: inline-block;
+    width: 130px;
+    margin: 0 auto;
+    height: 25px;
+	font-weight:bold;
+}
+#ringDetail .detail-all .detail1{
+	display:block;
+}
+#ringDetail .detail-all .detail1-canshu{
+	overflow: hidden;
+    padding-left: 126px;
+    margin-bottom: 18px;
+}
+#ringDetail .detail-all .detail1-canshu li{
+	width: 290px;
+    font-size: 12px;
+    color: #666;
+    float: left;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+#ringDetail .detail-all .detail1-canshu span{
+	color: #999;
+}
+#ringDetail .detail-all .detail1-img{
+	text-align:center;
+}
+
+#ringDetail .hotSalesList{
+    overflow: hidden;
+    margin-left: -21px;
+}
+#ringDetail .hotSalesList li{
+    position: relative;
+    background: #fff;
+    float: left;
+    height: 190px;
+    margin-left: 20px;
+}
+#ringDetail .hotSalesList a{
+    position: absolute;
+    background: #fff;
+    opacity: 0.01;
+    filter: alpha(opacity=0.01);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+#ringDetail .hotSalesList img{
+    width:130px;
+    height:130px;
+}
+#ringDetail .hotsame{
+	display: block;
+    margin-top: 18px;
+    margin-bottom: 26px;
+}
+#ringDetail .hotmatch-all{
+	margin-bottom: 50px;
+    position: relative;
+    width: 870px;
+    overflow: hidden;
+    margin:0 auto;
+}
+#ringDetail #pic-lf{
+    left:0px;
+    z-index: 12;
+
+}
+#ringDetail #pic-rt{
+    right:0px;
+    z-index: 12;
+}
+#ringDetail .hotSalesList-box{
+    width: 900px;
+}
+#ringDetail .hotSalesList{
+    width: 2040px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 190px;
+    cursor: pointer;
+/*	width: 3600px;*/
+/*    margin-left: -1800px;*/
+}
+#ringDetail .hotSalesList li{
+    float: left;
+    width: 130px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+}
+#ringDetail .hotSalesList li a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    opacity: 0.01;
+	width:130px;
+	height:190px;
+
+}
+#ringDetail .hotSalesList li img{
+	width:130px;
+}
+#ringDetail .hotSalesInfo p{
+	margin-bottom:5px;
+}
+#ringDetail .hotSalesInfo p i{
+	color: #c57d5c;
+}
+/*#ringDetail .hotmatch-all .sr-rt{*/
+    /*position: absolute;*/
+    /*width: 10px;*/
+    /*height: 19px;*/
+    /*top: 50%;*/
+    /*right: 0;*/
+    /*background-position: -10px 0;*/
+    /*right: 15px;*/
+/*}*/
+#alertMsg {
+    display: none;
+    width: 380px;
+    border: 1px solid #ddd;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: 21px;
+    font-size: 12px;
+    position: absolute;
+    /* text-align: center; */
+    background: #fff;
+    z-index: 100000;
+    display: block;
+    position: fixed;
+    left: 480px;
+    top: 181px;
+    width: 340px;
+    height: 151px;
+}
+#alertMsg_info {
+    width: 265px;
+    height: 116px;
+    line-height: 1.6em;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 52px;
+    background: url(../img/ringlist/tan.png) no-repeat 12% 37%;
+    background-size: 9% auto;
+}
+#alertMsg span{
+    font-size: 23px;
+    font-family: 'sisun';
+    font-weight: 300;
+    color: #bdbdbd;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    cursor: pointer;
+}
+#alertMsg_btn1, #alertMsg_btn2 {
+    display: inline-block;
+    position: relative;
+    top: -63px;
+    left: 147px;
+    padding-left: 0px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #FE6A00;
+}
+#alertMsg_btn1 cite, #alertMsg_btn2 cite {
+    line-height: 21px;
+    display: inline-block;
+    padding: 5px 14px 4px 10px;
+    font-style: normal;
+    font-size: 16px;
+    position: relative;
+    left: 4px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

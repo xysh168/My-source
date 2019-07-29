@@ -1,0 +1,84 @@
+
+#box{
+	width:1200px;
+	height:510px;
+	position:absolute;
+	overflow:hidden;
+
+}
+#box>div{
+	width:120px;
+	height:510px;
+	position:absolute;
+	top:0;
+	left:-1000px;
+	background-image:url(../img/banner-index/1.jpg);
+}
+#box>div:nth-child(2){
+	left:0px;
+	background-position:0px 0px;
+}
+#box>div:nth-child(3){
+	left:120px;
+	background-position:-120px 0px;
+}
+#box>div:nth-child(4){
+	left:240px;
+	background-position:-240px 0px;
+}
+#box>div:nth-child(5){
+	left:360px;
+	background-position:-360px 0px;
+}
+#box>div:nth-child(6){
+	left:480px;
+	background-position:-480px 0px;
+}
+#box>div:nth-child(7){
+	left:600px;
+	background-position:-600px 0px;
+}
+#box>div:nth-child(8){
+	left:720px;
+	background-position:-720px 0px;
+}
+#box>div:nth-child(9){
+	left:840px;
+	background-position:-840px 0px;
+}
+#box>div:nth-child(10){
+	left:960px;
+	background-position:-960px 0px;
+}
+#box>div:nth-child(11){
+	left:1080px;
+	background-position:-1080px 0px;
+}
+.shake{
+	animation:shake .5s ease-in-out;
+}
+@keyframes shake{
+	0%{top:0px}
+	20%{top:100px}
+	50%{top:-70px}
+	65%{top:40px}
+	80%{top:-20px}
+	90%{top:10px}
+	100%{top:0px}
+}
+.index{
+	z-index:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
